@@ -1,2 +1,2 @@
 # IT-102
-Code for IT 102
+# Assignments for IT-102
