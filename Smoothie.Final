@@ -1,0 +1,30 @@
+fruits = ["apple", "banana", "orange", "grape", "kiwi", "kale", "cucumber", "avacado", "canteloupe", "pineapple", "mango", "tomato"]
+print ('''Welcome to Jake's Smoothie Shop! Here are the available fruits and veggies:
+----------------------------------------------------------------------------
+''')
+print (fruits)
+next_1 = input('PRESS ENTER TO CONTINUE')
+next_2 = input('''
+Wait a minute! No one wants a tomato smoothie! PRESS ENTER TO CONTINUE
+''')
+
+fruits.remove("tomato")
+fruits.insert(11, "Papaya")
+
+next_3 = input ('''We'll replace the tomato with papaya! PRESS ENTER TO CONTINUE
+''')
+print (fruits)
+print ('''
+That's MUCH better.
+''')
+
+import random
+
+ingredient_1 = random.choice(fruits)
+
+ingredient_2 = random.choice(fruits)
+
+if ingredient_1 == ingredient_2:
+	print ("You get a super " + ingredient_1 + " smoothie! Enjoy!")
+else:
+	print ("Your smoothie is a combination of " + ingredient_1 + " and " + ingredient_2 + ". Enjoy!") 
